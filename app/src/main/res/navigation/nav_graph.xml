@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="in.staffskilledindia.app.HomeFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_homeFragment_to_dashboardFragment"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+        
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="in.staffskilledindia.app.DashboardFragment"
+        android:label="Dashboard" />
+        
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="in.staffskilledindia.app.ProfileFragment"
+        android:label="Profile" />
+</navigation> 
